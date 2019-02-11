@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ATA All Tetris Arcades</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <img src="img/intro.png" alt="intro" id="intro"/>
+    <input type="text" id="entername" autofocus/>
+    <img src="img/name.png" alt="name" id="name"/>
+    <div id="leftmenu">
+        <div id="nextblock"></div>
+        <div id="betterscore"></div>
+        <div id="doneby"></div>
+    </div>
+    <div id="gameregion">
+        <canvas id="gameboard" width="176" height="384"></canvas>
+        <canvas id="gameboard2" width="200" height="392"></canvas>
+        <canvas id="gameboard3" width="200" height="392"></canvas>
+    </div>
+    <div id="rightmenu">
+        <div id="player"></div>
+        <div id="score">0000000</div>
+        <div id="lines">00000</div>
+    </div>
+    <script>
+        var Game = new Game();
+        var canvas = document.getElementById("gameboard");
+        var canvas2 = document.getElementById("gameboard2");
+        var canvas3 = document.getElementById("gameboard3");
+        var ctx1 = canvas.getContext("2d");
+        var ctx2 = canvas2.getContext("2d");
+        var ctx3 = canvas3.getContext("2d");
+        Game.start();
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Tetris";
+    src: url("../fonts/Tetris.ttf");
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0 auto;
+    font-family: "Tetris";
+    color: white;
+}
+#intro{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 350px);
+    width: 700px;
+    height: 500px;
+    z-index: 10;
+}
+#entername{
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 30px;
+    z-index: 9;
+    background-color: black;
+    border: 0px;
+    color:white;
+    font-family: "Tetris";
+    outline: none;
+    text-align: center;
+}
+#name{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 350px);
+    width: 700px;
+    height: 500px;
+    z-index: 8;
+}
+#leftmenu{
+    position: absolute;
+    left: calc(50% - 284px);
+    width:176px;
+    height: 368px;
+    background-image: url("../img/leftmenu.png");
+}
+#nextblock{
+    width: 64px;
+    height: 32px;
+    position: relative;
+    top:32px;
+    left: 96px;
+}
+#betterscore{
+    position: relative;
+    top: 116px;
+    text-align: center;
+    color: rgb(248,248,248);
+}
+#doneby{
+    position: relative;
+    top: 143px;
+    text-align: center;
+    color: rgb(248,248,248);
+}
+#gameregion{
+    width: 200px;
+    height: 392px;
+    position: relative;
+    left: calc(50% - 100px);
+}
+#gameboard{
+    position: absolute;
+    width: 176px;
+    height: 384px;
+    left: calc(50% - 88px);
+    z-index: 1;
+}
+#gameboard2{
+    position: absolute;
+    width: 200px;
+    height: 392px;
+    left: calc(50% - 100px);
+    z-index: 2;
+    background: transparent;
+}
+#gameboard3{
+    position: absolute;
+    width: 200px;
+    height: 392px;
+    left: calc(50% - 100px);
+    z-index: 0;
+    background: transparent;
+    visibility: hidden;
+}
+#rightmenu{
+    position: absolute;
+    left: calc(50% + 108px);
+    top: 0;
+    width: 224px;
+    height: 366px;
+    background-image: url("../img/rightmenu.png");
+}
+#player{
+    position: relative;
+    top: 204px;
+    text-align: center;
+    color: rgb(248,248,248);
+}
+#score{
+    position: relative;
+    top: 248px;
+    text-align: center;
+    color: rgb(248,248,248);
+}
+#lines{
+    position: relative;
+    text-align: center;
+    top: 296px;
+    color: rgb(248,248,248);
+}
